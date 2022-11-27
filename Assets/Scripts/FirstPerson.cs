@@ -66,7 +66,7 @@ using UnityEngine;
                 {
                     if (hit.transform.CompareTag("Enemy"))
                     {
-                        // hit.transform.GetComponent<>          
+                        hit.transform.GetChild(0).gameObject.GetComponent<HealthbarController>().ReduceHealth();        
                     } 
                 }
             }
